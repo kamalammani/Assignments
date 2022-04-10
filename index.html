@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <!-- Metadat -->
+      <meta charset="UTF-8">
+      <meta name="Data record" content="HTML,CSS,JS">
+      
+      <title>Employee</title>
+      
+      <!-- CSS File -->
+      <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+     <!-- Used table to maintain Employee data -->
+     <table>
+        <tr>
+            <td>
+               <!-- Form to get User details -->
+                <form onsubmit="event.preventDefault();" autocomplete="off" id="formID">
+                    <div>
+                        <label>First name</label>
+                        <input type="text" name="Fname" id="FnameID">
+                    </div>
+                    <div>
+                        <label>Last name</label>
+                        <input type="text" name="Lname" id="LnameID">
+                    </div>
+                    <div>
+                        <label>city</label>
+                        <input type="text" name="city" id="cityID">
+                    </div>
+                    <div>
+                        <label>country</label>
+                        <input type="text" name="country" id="countryID">
+                    </div>
+                    <p style="font-weight:bold;color:red;" id="error handler"></p>
+                    <div  class="button">
+                        <input type="submit" value="Add At Top" onClick="addTop()"><br/>
+                    </div>
+                    <div  class="button">
+                      <input type='submit' value='Add At Bottom' onclick="addBottom()">
+                    </div>
+                </form>
+               </td>
+             <td>
+              <table class="list" id="dataList" border =2>
+               <thead>
+                 <tr>
+                  <th>S.NO</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>City</th>
+                  <th>Country</th>
+                 </tr>
+                </thead>
+              </table>
+           </td>
+        </tr>
+   </table>
+   <script src="script.js">
+   </script>
+</body>
+</html>
